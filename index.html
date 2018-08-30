@@ -14,8 +14,30 @@
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/vertical.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/style.changer.css" rel="stylesheet">
     <link id="theme" href="css/theme/theme-red-2.css" rel="stylesheet">
+	  <style>
+		   #hlo{
+        float: left;
+        background: #181818;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        width: 40px;
+    }
+		  #wish{
+  float: right;
+  background: #181818;
+  font-size: 20px;
+  font-weight: bolder;
+}
+		  
+		  
+		  
+		  
+		  
+		  
+	  </style>
   </head>
   <body class="appear-animate">
     <!-- Page Loader Start-->
@@ -52,6 +74,8 @@
 	<div id="particle-ground" data-background="img/full-width/bg-21.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-10"></div>
       <div class="hero-content">
         <div class="hero-content-inner">
+		   <div id="hlo">H<br>E<br>L<br>L<br>O<br><br>T<br>H<br>E<br>R<br>E</div>
+            <div id="wish">G<br>O<br>O<br>D</div>
             <div>
           <img src="img/full-width/rangrezz%20without%20text.png" style="height:13%;width:21%;padding: 0px;border:0px;margin: 0px;">
             </div>
@@ -153,5 +177,31 @@ Stay tuned for further details.</p>
     <!--Delete after config-->
     <script src="js/style.changer.js"></script>
     <script src="js/jquery.particleground.min.js"></script>
+ <script>
+        var today=new Date();
+        var msg;
+        var hours=today.getHours();
+        if(hours>=1&&hours<12)
+        {
+            msg="G"+'<br>'+"O"+'<br>'+"O"+'<br>'+"D"+'<br>'+'<br>' +"M"+'<br>'+"O"+'<br>'+"R"+'<br>'+"N"+'<br>' +"I"+'<br>'+"N"+'<br>'+"G"+'</h3>';
+        }
+        else if(hours>=12&&hours<18)
+        {
+            msg="G"+'<br>'+"O"+'<br>'+"O"+'<br>'+"D"+'<br>'+'<br>' +"A"+'<br>'+"F"+'<br>'+"T"+'<br>'+"E"+'<br>' +"R"+'<br>'+"N"+'<br>'+"O"+'<br>'+"O"+'<br>'+"N"+'</h3>';
+        }
+        else if(hours>=18&&hours<=1)
+        {
+            msg="G"+'<br>'+"O"+'<br>'+"O"+'<br>'+"D"+'<br>'+'<br>' +"E"+'<br>'+"V"+'<br>'+"E"+'<br>'+"N"+'<br>' +"I"+'<br>'+"N"+'<br>'+"G"+'</h3>';
+        }
+        else
+        {
+            msg="W"+'<br>'+"E"+'<br>'+"L"+'<br>'+"C"+'<br>'+"O"+'<br>'+"M"+'<br>'+"E"+'</h3>';
+        }
+        var el=document.getElementById('wish');
+        el.innerHTML=msg;
+    </script>
+
+
+
   </body>
 </html>
