@@ -17,7 +17,7 @@
 
 
     $(window).load(function() {
-        $('.page-loader').delay(600).fadeOut('slow');
+        $('.page-loader').delay(100).fadeOut('slow');
     });
 
   /* Adding Background Image */
@@ -671,3 +671,7 @@
   init_wow();
 
 }).call(this);
+
+
+
+

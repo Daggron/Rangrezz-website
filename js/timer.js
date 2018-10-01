@@ -18,6 +18,20 @@ let timer = setInterval(function() {
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
+   if(days<=0)
+   {
+       document.getElementById("timer").innerHTML =   "<div class=\"days\"> \
+  <div class=\"numbers\"></div><br>The</div> \
+<div class=\"hours\"> \
+  <div class=\"numbers\"></div><br>ShowDown</div> \
+<div class=\"minutes\"> \
+  <div class=\"numbers\"></div></div> \
+<div class=\"seconds\"> \
+  <div class=\"numbers\"></div><br>Starts</div> \
+</div>";
+
+   }
+   else{
   document.getElementById("timer").innerHTML =
     "<div class=\"days\"> \
   <div class=\"numbers\">" + days + "</div>days</div> \
@@ -29,7 +43,7 @@ let timer = setInterval(function() {
   <div class=\"numbers\">" + seconds + "</div>seconds</div> \
 </div>";
 
-}, 1000);
+}}, 1000);
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -24,9 +24,6 @@
 
       <script src="js/cards.js"></script>
   </head>
-  <style>
-
-  </style>
   <body class="appear-animate">
     <!-- Page Loader Start-->
     <div class="page-loader">
@@ -51,7 +48,9 @@
             </li>
             <!-- End Item With Sub-->
             <li><a href="#about">About</a></li>
+              <li><a href="#sponser">Partners</a></li>
             <li><a href="#contacts">Contact Us</a></li>
+             <!-- <li><a  href="team.html">Team</a></li>-->
           </ul>
         </div>
       </div>
@@ -71,17 +70,29 @@
                 <div id="mainlogo">
                 <img  id="rzlogo"src="img/full-width/Logo.png" >
                 </div>
+                <div id="timercase">
                     <div id="timer"></div>
+                  </div>
             </div>
-          <div id="tagline"data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown" style="padding: 0px;border: 0px;margin-bottom: 0px">Where We Live And <br>Breathe Theatre</div>
-            <div data-effect="fadeInUp" class="mt-30 animate-e" style="margin-top: 20px"><a href="https://paym.chitkara.edu.in/" class="scroll btn btn-coffee btn-border-w btn-round btn-medium"><span>Register Here</span></a><span>&nbsp; &nbsp;</span></div>
-     </div>
+            <div id="tagline">
+          <div data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown"><!--Where We Live And <br>Breathe Theatre<br>-->Register Here For<br><br></div>
+        </div>
+        <div id="buttons">
+              <div data-effect="fadeInUp" class="mt-30 animate-e" ><a href="https://paym.chitkara.edu.in/" class="scroll btn btn-coffee btn-border-w btn-round btn-medium abhay"><span>Major Events</span></a><span>&nbsp; &nbsp;</span></div>
+                <div data-effect="fadeInUp" class="mt-30 animate-e"><a href="https://paym.chitkara.edu.in/index_event.php" class="scroll btn btn-coffee btn-border-w btn-round btn-medium abhay"><span>Minor & FunEvents</span></a><span>&nbsp; &nbsp;</span></div>
+              </div>
+</div>
 
-      </div><a href="#page" data-start="display: block" data-100-start="display: none" class="btn-scroll-down scroll"></a>
+
+      </div>
+
     </div>
 
 
+
   </section>
+    <!---Image Slider-->
+    <!----end-->
     <div id="page" class="page">
       <!--Start section about-->
       <section id="about">
@@ -95,7 +106,7 @@
 
                   <div class="back">
                       <h1 class="text-shadow" style="color:white;">Street Play</h1>
-                      <h1>Click here to view rule book<a href="https://drive.google.com/file/d/1xpcslogeZu99ezwnufZbIJmje3B2RTtT/view?usp=sharing"><span class="whitekaro"> Rulebook</span></a></h1>
+                      <h1>Click here to view rule book<a href="https://drive.google.com/file/d/0ByIuOWSsbRorZjFQRzRCNDA1dW9zYmpMbjRacmMxd1JmTThJ/view?usp=sharing"><span class="whitekaro"> Rulebook</span></a></h1>
                   </div>
               </div>
               <div class="flip">
@@ -103,7 +114,7 @@
 
                   <div class="back">
                       <h1 class="text-shadow" style="color:white;">Stage Play</h1>
-                      <h1>Click here to view rule book<a href="https://drive.google.com/file/d/1F7oBo7TPzUTdHzX-o46y2rt3JLNTfGAy/view?usp=sharing"><span class="whitekaro"> Rulebook</span></a></h1>
+                      <h1>Click here to view rule book<a href="https://drive.google.com/file/d/0ByIuOWSsbRorZjFQRzRCNDA1dW9zYmpMbjRacmMxd1JmTThJ/view?usp=sharing"><span class="whitekaro"> Rulebook</span></a></h1>
                   </div>
               </div>
               <div class="flip">
@@ -249,13 +260,30 @@ Stay tuned for further details.</p>
 
         <!--Ends -->
       <!--Timeline-->
+        <section id="sponser">
+         <div id="Sponsers">
+             <h1 style="font-size: 70px">
+                 Our Partners
+             </h1>
+             <div id="box">
+                 <div id="spphoto">
+                     <h2>Talent Showcase Partner</h2>
+                     <img src="img/mood.png" height="200px" width="auto">
+                 </div>
+                 <div id="secondsponser">
+                     <h2>Online Media Partner</h2>
+                     <img src="img/full-width/tksponser.jpg" height="200px" width="auto">
+                 </div>
+             </div>
 
-
+         </div>
+        </section>
         <section id="contacts" class="pt-0">
             <div class="contact-logo">
                 Contact Us
                 <div class="contact-h" id="abhay">
                     <p> For Registrations and General Queries, Contact Us with the Details Below</p>
+                    <h3 style="color: #c7254e">Overall Coordinator: Neelam Verma</h3>
                 </div>
                 <div class="contact-content">
                     <div class="contact-c1">
@@ -265,10 +293,6 @@ Stay tuned for further details.</p>
                     <div class="contact-c2">
                         <p class="con"><br><b>Fest Convener:</b><br>Siddhant Anand<br><a href="tel:+91-9034200167"  class="phonenumber">+91-9034200167</a><br></p>
                         <p style="font-family: sans-serif"><a href="mailto:siddhant.anand13@gmail.com">siddhant.anand13@gmail.com</a></p>
-                    </div>
-                    <div class="contact-c3">
-                        <p class="con"><br><b>Overall Co-ordinater</b><br>Neelam Verma<br></p>
-
                     </div>
                 </div>
             </div>
@@ -330,6 +354,5 @@ Stay tuned for further details.</p>
     </script>
 
 <script src="js/timer.js"></script>
-
   </body>
 </html>
